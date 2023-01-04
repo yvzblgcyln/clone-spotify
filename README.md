@@ -2,11 +2,12 @@
 
 demo: https://delirious-park.surge.sh/
 
+Not: for login, only username is enough, no password check
 A spotify clone react app, responsive for width=800px and more resulation. You can:
-- login/register with dummy names.
+- login/register with dummy infos.
 - navigate between pages. 
-- play song with the button located bottom of the page ![image](https://user-images.githubusercontent.com/103778738/210563186-d66b4921-d7f5-40bd-8669-746cbcd8b5ea.png)
-- create playlist
+- play song with the button which located in mid bottom of the page 
+- create playlists
 
 # menu without login
 ![image](https://user-images.githubusercontent.com/103778738/210561700-1d2fd029-8136-41ab-a510-fa9153642ef1.png)
