@@ -1,0 +1,98 @@
+.home {
+  background-color: #121212;
+  color: white;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .cards {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      overflow: hidden;
+      .card {
+        background-color: #1b1b1b;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.8s;
+        border-radius: 5px;
+        padding: 20px;
+        gap: 16px;
+        .title {
+          font-weight: 700;
+        }
+        .artists {
+          font-weight: 400;
+          font-size: 14px;
+          color: rgb(209, 209, 209);
+        }
+        .imgCont {
+          position: relative;
+          .cover {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+          .playBtn {
+            width: 50px;
+            height: 50px;
+            opacity: 0;
+            position: absolute;
+            top: 100px;
+            right: 10px;
+            background: black;
+            border-radius: 50%;
+            transition: 0.3s;
+          }
+        }
+        &:hover {
+          background-color: rgb(49, 49, 49);
+        }
+        &:hover .playBtn {
+          top: 90px;
+          opacity: 1;
+          height: 50px;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        div:nth-child(4) {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        div:nth-child(4) {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 1000px) {
+        div:nth-child(5) {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 1400px) {
+        div:nth-child(6) {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 1600px) {
+        div:nth-child(7) {
+          display: none;
+        }
+      }
+    }
+  }
+}

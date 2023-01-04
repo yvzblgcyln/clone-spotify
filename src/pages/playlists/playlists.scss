@@ -1,0 +1,111 @@
+.playlists {
+  h3 {
+    padding-bottom: 25px;
+  }
+  .playlistsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    .liked {
+      text-decoration: none;
+      color: white;
+      background-image: linear-gradient(to bottom right, rgb(50, 16, 201), rgb(122, 142, 209));
+      border-radius: 8px;
+      position: relative;
+      cursor: pointer;
+      width: 286px;
+      height: 210px;
+      padding: 15px;
+      .infoContainer {
+        overflow: hidden;
+        max-height: 89px;
+        .artist {
+        }
+        .music {
+          color: rgb(179, 179, 179);
+        }
+        .dot {
+          font-weight: 900;
+          color: rgb(179, 179, 179);
+          font-size: 20px;
+        }
+      }
+      h1 {
+        padding: 30px 0 10px 0;
+      }
+      .counter {
+      }
+      .playBtn {
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+        position: absolute;
+        bottom: 10px;
+        right: 25px;
+        background: black;
+        border-radius: 50%;
+        transition: 0.3s;
+      }
+      &:hover {
+        background-color: rgb(49, 49, 49);
+      }
+      &:hover .playBtn {
+        bottom: 20px;
+        opacity: 1;
+        height: 50px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+      }
+    }
+    .coversArea {
+      width: 128px;
+      height: 210px;
+      padding: 15px;
+
+      &:hover {
+        border-radius: 8px;
+        background-color: rgb(58, 59, 59);
+      }
+      .covers {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 64px;
+          height: 64px;
+          object-fit: cover;
+        }
+        .playBtn {
+          width: 50px;
+          height: 50px;
+          opacity: 0;
+          position: absolute;
+          bottom: 4px;
+          right: 9px;
+          background: black;
+          border-radius: 50%;
+          transition: 0.3s;
+        }
+        &:hover {
+          background-color: rgb(49, 49, 49);
+        }
+        &:hover .playBtn {
+          bottom: 6px;
+          opacity: 1;
+          height: 50px;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+        }
+      }
+      h4 {
+        padding-top: 20px;
+      }
+      .user {
+        padding-top: 10px;
+        color: rgb(184, 184, 184);
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  .appRight {
+    width: 100%;
+    overflow: auto;
+    background-color: #121212;
+    color: white;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    &::-webkit-scrollbar {
+      background-color: rgb(0, 0, 0);
+      width: 12px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(68, 68, 68);
+      &:hover {
+        background-color: rgb(148, 148, 148);
+      }
+    }
+    .outlet {
+      padding: 0px 32px 40px 32px;
+    }
+  }
+}

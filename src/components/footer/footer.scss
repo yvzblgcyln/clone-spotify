@@ -1,0 +1,62 @@
+.footer {
+  padding: 8px 32px 40px 32px;
+  color: white;
+  font-weight: 600;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 1px solid rgb(83, 80, 80);
+    padding: 40px 0;
+    .topLeft {
+      display: flex;
+      gap: 30px;
+      .company {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .communities {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+    .topRight {
+      display: flex;
+      gap: 10px;
+      img {
+        border-radius: 50%;
+        padding: 10px;
+        height: 20px;
+        background-color: rgb(59, 58, 58);
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 60px 0;
+    .bottomLeft {
+      display: flex;
+      gap: 18px;
+    }
+    .bottomRight {
+      color: grey;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 600;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}

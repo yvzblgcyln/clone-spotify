@@ -1,0 +1,61 @@
+.search {
+  width: 100%;
+  .unSearchContainer {
+    overflow: auto;
+    background-color: #121212;
+    color: white;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      div:nth-child(6n + 1) {
+        background-color: rgb(83, 86, 154);
+      }
+      div:nth-child(6n + 2) {
+        background-color: rgb(76, 119, 139);
+      }
+      div:nth-child(6n + 3) {
+        background-color: rgb(76, 139, 90);
+      }
+      div:nth-child(6n + 4) {
+        background-color: rgb(102, 139, 76);
+      }
+      div:nth-child(6n + 5) {
+        background-color: rgb(139, 132, 76);
+      }
+      div:nth-child(6n + 6) {
+        background-color: rgb(139, 85, 76);
+      }
+      .card {
+        width: 117px;
+        height: 117px;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        h3 {
+          padding-right: 10px;
+          position: absolute;
+          z-index: 1;
+        }
+        img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          position: absolute;
+          top: 70px;
+          left: 70px;
+          transform: rotate(30deg);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          z-index: 0;
+        }
+      }
+    }
+  }
+}
