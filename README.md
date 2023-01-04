@@ -33,7 +33,7 @@ A spotify clone react app, responsive for width=800px and more resulation. You c
 # tracks and playlists
 ![image](https://user-images.githubusercontent.com/103778738/210562835-945103e9-0ac9-4b79-b139-250946fd1e1a.png)
 
-# logout dropdown menu
+# dropdown menu for logout 
 ![image](https://user-images.githubusercontent.com/103778738/210562127-f49deb1b-df3d-4c94-b767-4a02de3a6502.png)
 
 # todos:
